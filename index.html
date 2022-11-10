@@ -10,7 +10,23 @@
 </head>
 <style> 
  body { 
-  background-color: #ffe35e;
+  background: linear-gradient(225deg, #c99803, #402a23);
+ }
+
+ h1 {
+  color: #e3d925;
+ }
+
+ h2 {
+  color: #fff64f;
+ }
+
+ .city-name {
+  color: #f7f7f2;
+ }
+
+ .main-text {
+  color: #ffffff;
  }
 
 .image-text {
@@ -29,16 +45,22 @@
     margin-left: 20px;
 }
 
-.card {
-  
-}
-
 .btn-sm {
     margin-left: 295px;
 }
 
 .btn-custom {
-    background-color: #1d7448;
+    background: linear-gradient(to right, #061c01, #0f9b0f);
+    color: rgb(215, 211, 211);
+    font-weight: 600;
+}
+
+.btn-custom:hover {
+    background: #2ca96a;;
+}
+
+.fs-5 {
+  color: #092719;
 }
 
 @media screen and (max-width: 991px) { 
@@ -69,24 +91,38 @@
 .gallery {
   margin-bottom: 10px;
   border: 0px;
-  background-color: #664b35;
+  background: linear-gradient(to right, #ffe259, #db9146);
+  font-weight: 500;
+  color: #21160e;
 }
 
 .gallery:hover {
-  background-color: #e7f0c3;
+  background: #e0d83f;
   border: #f0cf85;
   color: #f5b553;
 }
 
+.info-modal {
+  background: #fdffcd;
+}
 
+.card {
+  background: linear-gradient(to right, #396afc, #2948ff);
+}
 
+.card-title {
+  color: #e5dddd;
+}
 
+.img-gallery {
+  background: #eed4a8;
+}
 
 </style>
 <body>
     <div class = "container pt-5">
         <h1 class="main-title text-center">Places to see in </h1>
-        <h2 class="text-center"> 🗺️ Santiago, Chile📍</h2>
+        <h2 class="text-center city-name"> 🗺️ Santiago, Chile📍</h2>
         <hr class="mt-5"> 
 
         <p class="justify-content mt-4 mb-5 main-text">
@@ -156,7 +192,7 @@
                   <img src="https://blog.entrekids.cl/wp-content/uploads/2020/02/6.jpg" class="card-img-top" alt="castle">
                   <div class="card-body">
                     <h5 class="card-title">Santa Lucia Hill</h5>
-                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#sixthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#sixthModal">See more ℹ️</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#sixteenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -167,7 +203,7 @@
                   <img src="https://i0.wp.com/imaginasantiago.com/wp-content/uploads/2013/08/DSC_0005-001.jpg?w=640&ssl=1" class="card-img-top" alt="park">
                   <div class="card-body">
                     <h5 class="card-title">Sculpture Park Museum</h5>
-                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#seventhModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#seventhModal">See more ℹ️</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#seventeenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -178,7 +214,7 @@
                   <img src="https://www.monumentos.gob.cl/sites/default/files/styles/slide_monumentos/public/image-monumentos/mh_00028_2017_av_001.jpg?itok=cJ11j3Er" class="card-img-top" alt="cathedral">
                   <div class="card-body">
                     <h5 class="card-title">Metropolitan Cathedral</h5>
-                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#eighthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#eighthModal">See more ℹ️</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#eighteenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -189,7 +225,7 @@
                   <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/bb/c2/12/parque-bicentenario.jpg?w=1200&h=-1&s=1" class="card-img-top" alt="lagoon">
                   <div class="card-body">
                     <h5 class="card-title">Bicentenario Park</h5>
-                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#ninthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#ninthModal">See more ℹ️</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#nineteenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -200,7 +236,7 @@
                   <img src="https://conociendochile.cl/wp-content/uploads/2019/08/aaaaaaa.jpg" class="card-img-top" alt="main-facade">
                   <div class="card-body">
                     <h5 class="card-title">Palacio de La Moneda</h5>
-                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#tenthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#tenthModal">See more ℹ️</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#twentiethModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -211,7 +247,7 @@
 
           <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="firstModalLabel">San Cristobal Hill</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -245,7 +281,7 @@
 
           <div class="modal fade" id="eleventhModal" tabindex="-1" aria-labelledby="eleventhModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="eleventhModalLabel">San Cristobal Hill</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -305,7 +341,7 @@
 
           <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="secondModalLabel">Cajón del Maipo</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -320,15 +356,15 @@
                     <p>During winter season, you can access the Lagunillas ski center, either in your own vehicle (hopefully 4 × 4, you must have chains), or also by hiring private transport on site or from Santiago. <br>Within the category of ski centers, Lagunillas is the cheapest in relation to the others (Farellones, La Parva, Valle Nevado, El Colorado in the Mapocho area and Portillo in Aconcagua).</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn gallery data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
-         </div>
 
          <div class="modal fade" id="twelfthModal" tabindex="-1" aria-labelledby="twelfthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="twelfthModalLabel">Cajón del Maipo</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -388,7 +424,7 @@
 
          <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="thirdModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="thirdModalLabel">Gran Torre Santiago (<em>Costanera Tower</em>)</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -423,7 +459,7 @@
 
          <div class="modal fade" id="thirteenthModal" tabindex="-1" aria-labelledby="thirteenthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="thirteenthModalLabel">Gran Torre Santiago (<em>Costanera Tower</em>)</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -483,7 +519,7 @@
 
          <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="fourthModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="fourthModalLabel">Aguas de Ramon Natural Park</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -519,7 +555,7 @@
 
          <div class="modal fade" id="fourteenthModal" tabindex="-1" aria-labelledby="fourteenthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="fourteenthModalLabel">Aguas de Ramon Natural Park</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -579,7 +615,7 @@
 
          <div class="modal fade" id="fifthModal" tabindex="-1" aria-labelledby="fifthModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="fifthModalLabel">La Parva</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -608,7 +644,7 @@
 
          <div class="modal fade" id="fifteenthModal" tabindex="-1" aria-labelledby="fifteenthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="fifteenthModalLabel">La Parva</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -668,7 +704,7 @@
 
          <div class="modal fade" id="sixthModal" tabindex="-1" aria-labelledby="sixthModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="sixthModalLabel">Santa Lucia Hill</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -698,7 +734,7 @@
 
          <div class="modal fade" id="sixteenthModal" tabindex="-1" aria-labelledby="sixteenthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="sixteenthModalLabel">Santa Lucia Hill</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -759,7 +795,7 @@
 
          <div class="modal fade" id="seventhModal" tabindex="-1" aria-labelledby="seventhModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="seventhModalLabel">Sculpture Park Museum <em>(Parque de Las Esculturas)</em></h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -787,7 +823,7 @@
 
          <div class="modal fade" id="seventeenthModal" tabindex="-1" aria-labelledby="seventeenthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="seventeenthModalLabel">Sculpture Park Museum</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -848,7 +884,7 @@
 
          <div class="modal fade" id="eighthModal" tabindex="-1" aria-labelledby="eighthModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="eighthModalLabel">Metropolitan Cathedral</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -876,7 +912,7 @@
 
          <div class="modal fade" id="eighteenthModal" tabindex="-1" aria-labelledby="eighteenthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="eighteenthModalLabel">Metropolitan Cathedral</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -936,7 +972,7 @@
 
          <div class="modal fade" id="ninthModal" tabindex="-1" aria-labelledby="ninthModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="ninthModalLabel">Bicentenario Park</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -971,7 +1007,7 @@
 
          <div class="modal fade" id="nineteenthModal" tabindex="-1" aria-labelledby="nineteenthModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="nineteenthModalLabel">Bicentenario Park</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1031,7 +1067,7 @@
 
          <div class="modal fade" id="tenthModal" tabindex="-1" aria-labelledby="tenthModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
+              <div class="modal-content info-modal">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="tenthModalLabel">Palacio de La Moneda</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1060,7 +1096,7 @@
 
          <div class="modal fade" id="twentiethModal" tabindex="-1" aria-labelledby="twentiethModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content img-gallery">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="twentiethModalLabel">La Moneda Palace (Palacio de La Moneda)</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
