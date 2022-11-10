@@ -9,6 +9,10 @@
     <title>Santiago, my hometown 🏠</title>
 </head>
 <style> 
+ body { 
+  background-color: #ffe35e;
+ }
+
 .image-text {
     margin-top: 40px;
     margin-left: 95px;
@@ -25,8 +29,16 @@
     margin-left: 20px;
 }
 
+.card {
+  
+}
+
 .btn-sm {
     margin-left: 295px;
+}
+
+.btn-custom {
+    background-color: #1d7448;
 }
 
 @media screen and (max-width: 991px) { 
@@ -54,9 +66,21 @@
 
 }
 
-    .gallery {
-        margin-bottom: 10px;
-    }
+.gallery {
+  margin-bottom: 10px;
+  border: 0px;
+  background-color: #664b35;
+}
+
+.gallery:hover {
+  background-color: #e7f0c3;
+  border: #f0cf85;
+  color: #f5b553;
+}
+
+
+
+
 
 </style>
 <body>
@@ -81,7 +105,7 @@
                 <div class="card-body">
                   <h5 class="card-title">San Cristobal Hill</h5>
                   <br>
-                  <p class="card-text"> <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#firstModal">See more ℹ️</button></p>
+                  <p class="card-text"> <button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#firstModal">See more ℹ️</button></p>
                   <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#eleventhModal">Gallery 📸</button></p>
                 </div>
               </div>
@@ -92,7 +116,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Cajón del Maipo</h5>
                   <br>
-                  <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#secondModal">See more ℹ️</button></p>
+                  <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#secondModal">See more ℹ️</button></p>
                   <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#twelfthModal">Gallery 📸</button></p>
                 </div>
               </div>
@@ -102,7 +126,7 @@
                 <img src="https://megaconstrucciones.net/images/rascacielos/foto/gran-torre-santiago.jpg" class="card-img-top" height="300" alt="tower1">
                 <div class="card-body">
                   <h5 class="card-title">Gran Torre Santiago (<em>Costanera Tower</em>)</h5>
-                  <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#thirdModal">See more ℹ️</button></p>
+                  <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#thirdModal">See more ℹ️</button></p>
                   <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#thirteenthModal">Gallery 📸</button></p>
                 </div>
               </div>
@@ -112,7 +136,7 @@
                 <img src="https://andesstgo.cl/wp-content/uploads/2020/09/PARQUE-AGUAS-DE-RAMON_1.jpg" class="card-img-top" alt="waterfall">
                 <div class="card-body">
                   <h5 class="card-title">Aguas de Ramon Natural Park</h5>
-                  <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#fourthModal">See more ℹ️</button></p>
+                  <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#fourthModal">See more ℹ️</button></p>
                   <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#fourteenthModal">Gallery 📸</button></p>
                 </div>
               </div>
@@ -122,7 +146,7 @@
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/La_Parva%2C_centro_de_esqu%C3%AD_%282011D2021A%29.jpg/1200px-La_Parva%2C_centro_de_esqu%C3%AD_%282011D2021A%29.jpg" class="card-img-top" alt="skiing">
                   <div class="card-body">
                     <h5 class="card-title">La Parva</h5>
-                    <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#fifthModal">See more ℹ️</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#fifthModal">See more ℹ️</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#fifteenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -132,7 +156,7 @@
                   <img src="https://blog.entrekids.cl/wp-content/uploads/2020/02/6.jpg" class="card-img-top" alt="castle">
                   <div class="card-body">
                     <h5 class="card-title">Santa Lucia Hill</h5>
-                    <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#sixthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#sixthModal">See more</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#sixteenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -143,7 +167,7 @@
                   <img src="https://i0.wp.com/imaginasantiago.com/wp-content/uploads/2013/08/DSC_0005-001.jpg?w=640&ssl=1" class="card-img-top" alt="park">
                   <div class="card-body">
                     <h5 class="card-title">Sculpture Park Museum</h5>
-                    <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#seventhModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#seventhModal">See more</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#seventeenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -154,7 +178,7 @@
                   <img src="https://www.monumentos.gob.cl/sites/default/files/styles/slide_monumentos/public/image-monumentos/mh_00028_2017_av_001.jpg?itok=cJ11j3Er" class="card-img-top" alt="cathedral">
                   <div class="card-body">
                     <h5 class="card-title">Metropolitan Cathedral</h5>
-                    <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#eighthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#eighthModal">See more</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#eighteenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -165,7 +189,7 @@
                   <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/bb/c2/12/parque-bicentenario.jpg?w=1200&h=-1&s=1" class="card-img-top" alt="lagoon">
                   <div class="card-body">
                     <h5 class="card-title">Bicentenario Park</h5>
-                    <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ninthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#ninthModal">See more</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#nineteenthModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -176,7 +200,7 @@
                   <img src="https://conociendochile.cl/wp-content/uploads/2019/08/aaaaaaa.jpg" class="card-img-top" alt="main-facade">
                   <div class="card-body">
                     <h5 class="card-title">Palacio de La Moneda</h5>
-                    <p class="card-text"><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tenthModal">See more</button></p>
+                    <p class="card-text"><button class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#tenthModal">See more</button></p>
                     <p class="card-text"> <button class="btn btn-secondary btn-sm gallery" data-bs-toggle="modal" data-bs-target="#twentiethModal">Gallery 📸</button></p>
                   </div>
                 </div>
@@ -213,7 +237,7 @@
                     <p>If you want to see it in all its magnitude, you should go up the Costanera Center <em>(Sky Costanera)</em> viewpoint.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -273,7 +297,7 @@
                       </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -296,7 +320,7 @@
                     <p>During winter season, you can access the Lagunillas ski center, either in your own vehicle (hopefully 4 × 4, you must have chains), or also by hiring private transport on site or from Santiago. <br>Within the category of ski centers, Lagunillas is the cheapest in relation to the others (Farellones, La Parva, Valle Nevado, El Colorado in the Mapocho area and Portillo in Aconcagua).</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -356,7 +380,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -391,7 +415,7 @@
 
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -451,7 +475,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -487,7 +511,7 @@
                     <p>The trekking routes enter the valley, where you can see hanging bridges, picturesque waterfalls, river crossings and amazing views in an absolutely striking natural environment. In winter, patches of snow can be seen on the route.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -547,7 +571,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -576,7 +600,7 @@
                     <p>There are three ticket sales points with eight cash registers in total, which are located in Hostería La Parva and at the bases of the Alpha (triple chair) and Manzanito lifts.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -636,7 +660,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -665,7 +689,7 @@
                     <p>In 1983 it was declared a National Monument in the category of Historical Monument, in accordance with its historical and patrimonial importance as one of the great vestiges of the urban history of the city.</p>
                     <p>Currently it plays an important role as a tourist attraction, being one of the most interesting public walks in the capital.</p>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -726,7 +750,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -754,7 +778,7 @@
                     <br>You can also get off at the Pedro de Valdivia station (Line 1), walk north towards the Costanera Andrés Bello, and cross the bridge over the Mapocho River. The park is located between Pedro de Valdivia and Nueva de Lyon streets.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
               </div>
               </div>
             </div>
@@ -815,7 +839,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -844,7 +868,7 @@
                         the external image we can appreciate.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -904,7 +928,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -939,7 +963,7 @@
 
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -999,7 +1023,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -1028,7 +1052,7 @@
                         also includes a cinema, a library, an educational center and several restaurants and cafes. Admission is free from Monday to Friday morning.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn gallery" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -1088,7 +1112,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
