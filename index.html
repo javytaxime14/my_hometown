@@ -121,6 +121,10 @@
       background: #2ca96a;
 
     }
+
+    #mapModal .modal {
+      width: 99%;
+    }
 }
 
 .gallery {
@@ -141,6 +145,10 @@
   background: #fdffcd;
 }
 
+#mapModal .modal-content {
+  background: #c2e2c2;
+}
+
 .card {
   background: linear-gradient(to right, #84c8ad, #25856a);
 }
@@ -158,6 +166,12 @@
 .modal-body {
   font-family: 'Merriweather', serif;
   font-weight: 500;
+}
+
+.map-button {
+  border: #c99803;
+  margin-left: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-text {
@@ -180,7 +194,55 @@
         <p class="justify-content mt-4 mb-5 main-text">Santiago has a warm temperate Mediterranean climate, 
           with an average annual temperature of 14.5ºC. <br>Spring begins in September, the weather is mild and cool, 
           with maximum temperatures up to 28 degrees during the day, and it drops at night from 6º C (43º F) to 12º C (54º F). 
-          <br>Occasionally it can also rain.</p>
+          <br>Occasionally it can also rain.
+        </p>
+
+        <button type="button" class="btn gallery map-button" data-bs-toggle="modal" data-bs-target="#mapModal">
+          View map
+        </button>
+
+        <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="mapModalLabel">Location</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="carouselMapControls" class="carousel slide carousel-fade" data-bs-ride="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://es.maps-chile.com/img/1200/santiago-de-chile-mapa.jpg" class="d-block w-100" height="400" alt="chile">
+                      <footer class="image-text">Santiago location within Chile</footer>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Comunas_de_Santiago_%28nombres%29.svg/2048px-Comunas_de_Santiago_%28nombres%29.svg.png" class="d-block w-100" height="400" alt="santiago">
+                      <footer class="image-text">Santiago communes division</footer>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://media.istockphoto.com/id/1095471704/es/foto/aaerial-vista-del-skyline-de-santiago-al-atardecer-con-rascacielos-costanera-y-monta%C3%B1as-de-los.jpg?s=612x612&w=0&k=20&c=oEzSmWTck_GT_ZC-8vaH7wwLD1E63nt4NjEBffYCOw0=" class="d-block w-100" height="400" alt="city-view">
+                      <footer class="image-text">General view</footer>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMapControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMapControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          
         <h2 class="text-center pt-3"> Some interesting places over here: </h2>
 
         <div class="row row-cols-sm-2 row-cols-md-2 g-4 mt-4">
@@ -1210,7 +1272,7 @@
 
     </div>
 
-    <footer class="main-text text-center text-warning mt-5 pt-5"><small> Coded by <a href="https://www.github.com/javytaxime14" class="text-decoration-none text-warning">Javiera Hidalgo</a></small></footer>
+    <footer class="main-text text-center text-warning mt-5 pt-5 pb-3"><small> Coded by <a href="https://www.github.com/javytaxime14" class="text-warning">Javiera Hidalgo</a></small></footer>
 
 <script>
 
